@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "f995a890-f94e-44c4-9b45-2828878e5729",
+		"name": "employee_management_system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:1176/ems/emp/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"fname\":\"Ajay\",\r\n\"lname\":\"Das\",\r\n\"mailid\":\"ajay@gmail.com\",\r\n\"mobile\":\"9865355016\",\r\n\"gender\": \"male\",\r\n\"dob\": \"17/03/1976\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1176/ems/emp/save",
+					"host": [
+						"localhost"
+					],
+					"port": "1176",
+					"path": [
+						"ems",
+						"emp",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1176/ems/emp/loginEmp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mailid\":\"ramesh@gmail.com\",\r\n    \"password\":\"IG34JS\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1176/ems/emp/loginEmp",
+					"host": [
+						"localhost"
+					],
+					"port": "1176",
+					"path": [
+						"ems",
+						"emp",
+						"loginEmp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1176/ems/emp/findAllEmp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1176/ems/emp/findAllEmp",
+					"host": [
+						"localhost"
+					],
+					"port": "1176",
+					"path": [
+						"ems",
+						"emp",
+						"findAllEmp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1176/ems/emp/forgotPasswordEmp/das.biswajit091lintu@gmail.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1176/ems/emp/forgotPasswordEmp/ramesh@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "1176",
+					"path": [
+						"ems",
+						"emp",
+						"forgotPasswordEmp",
+						"ramesh@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1176/ems/emp/changePassword?newPwd=/?????",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"mailid\":\"ramesh@gmail.com\",\r\n\"password\":\"IG34JS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1176/ems/emp/changePassword?newPwd=ramesh@",
+					"host": [
+						"localhost"
+					],
+					"port": "1176",
+					"path": [
+						"ems",
+						"emp",
+						"changePassword"
+					],
+					"query": [
+						{
+							"key": "newPwd",
+							"value": "ramesh@"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1176/ems/emp/saveAddress/302",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"address1\":\"At/po kalinga\",\r\n\"address2\":\"kalinga\",\r\n\"country\":\"india\",\r\n\"state\":\"odisha\",\r\n\"dist\":\"khordha\",\r\n\"pin\":\"751010\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1176/ems/emp/saveAddress/402",
+					"host": [
+						"localhost"
+					],
+					"port": "1176",
+					"path": [
+						"ems",
+						"emp",
+						"saveAddress",
+						"402"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1176/ems/emp/findAllEmpWithAddress/302",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1176/ems/emp/findAllEmpWithAddress/402",
+					"host": [
+						"localhost"
+					],
+					"port": "1176",
+					"path": [
+						"ems",
+						"emp",
+						"findAllEmpWithAddress",
+						"402"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
